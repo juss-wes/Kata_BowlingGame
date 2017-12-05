@@ -11,6 +11,12 @@ namespace BowlingGame.Tests
             // Arrange
             var game = new Game();
 
+            // Act
+            for (var i = 0; i < 20; i++)
+            {
+                game.Roll(0);
+            }
+
             // Assert
             Assert.IsTrue(game.Score() == 0);
         }
